@@ -21,9 +21,14 @@
 			<div class="txtb">
 				<input type="password" />
 				<span data-placeholder="Password"></span>
-				<input type="submit" class="logbtn" value="Login" />
 			</div>
+			<input type="submit" class="logbtn" value="Login" />
 			<div class="bottom-text">Don't have account? <a href="#">Sign up</a></div>
 		</form>
+		<script type="text/javascript">
+			$('.txtb input').on('focus', function() {
+				$(this).addClass('focus');
+			});
+		</script>
 	</body>
 </html>
